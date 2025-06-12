@@ -1,0 +1,622 @@
+/* Sessão Home */
+#home {
+	width: 100%;
+	height: 100vh;
+	background: url("../../img/fundo/fundo-home.jpg") no-repeat fixed center;
+	background-size: cover;
+}
+
+/* Sessão de Quem Somos Nós */
+.who-are-we {
+	/*text-align: justify;*/
+  padding: 0 5%;
+  margin: 5% 10%;
+}
+
+.who-are-we h1, #services section h1 {
+	color: purple;
+}
+
+.who-are-we p {
+	font-size: 1.2rem;
+	line-height: 1.5;
+	margin: auto;
+	width: 100%;
+}
+
+.you-can-trust-area, .our-differential-area {
+  padding: 0 5%;
+}
+
+.you-can-trust-area h3, .our-differential-area h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  /*text-transform: uppercase;*/
+  /*text-shadow: 1px 1px 1px black;*/
+}
+
+.you-can-trust-area > h3 > span, .our-differential-area > h3 > span {
+	color: purple;
+	font-weight: 800;
+	font-size: 2.2rem;
+	/*text-shadow: 0.1rem 0.1rem 0.1rem black;*/
+}
+
+.you-can-trust-container, .our-differential-container {
+	display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 7rem;
+}
+
+.you-can-trust-content, .our-differential-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.you-can-trust-content > span, .our-differential-content > span {
+	position: absolute;
+	top: -3rem;
+}
+
+.you-can-trust-content span > i {
+	font-size: 5rem;
+	color: purple;
+	filter: drop-shadow(0.2rem 0.2rem 0.2rem black);
+}
+
+.you-can-trust-text, .our-differential-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	text-align: center;
+	width: 20rem;
+	height: 8rem;
+	background: white;
+	margin: 1rem;
+	padding: 1.5rem;
+	border-radius: 1rem;
+	box-shadow: 0.1rem 0.5rem 1rem black;
+}
+
+.our-differential-text {
+	height: 14rem;
+	border-radius: 0;
+}
+
+.you-can-trust-text p, .our-differential-text p {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: .9em;
+	font-weight: 500;
+}
+
+.you-can-trust-text p span, .our-differential-text p span {
+	color: purple;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: .8rem;
+}
+
+.our-differential-content > span {
+	background: purple;
+	padding: 2rem;
+	height: 7rem;
+	width: 7rem;
+	text-align: center;
+	border-radius: 50%;
+	border: white solid 0.15rem;
+	box-shadow: 0.1rem 0.2rem 0.5rem black;
+}
+
+.our-differential-content span .bi {
+	font-size: 2.5rem;
+	color: white;
+}
+
+/* Sessão de Serviços */
+#services {
+  padding: 5%;
+}
+
+#services .area-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem 0;
+}
+
+#services .card {
+  position: relative;
+  width: var(--width-card-services);
+  height: var(--height-card-services);
+  background: #984d98;
+  color: #ffffff;
+  text-align: center;
+  border: 0.2rem solid #111;
+  overflow: hidden;
+  filter: drop-shadow(2px 4px 6px black);
+  margin: 1rem;
+}
+
+#services .card-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-380px);
+  transition: transform 0.8s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#services .card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s 0.5s;
+}
+
+#services .card-title {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: purple;
+  padding: 2rem;
+  width: 100%;
+  background: #ffffff;
+  filter: drop-shadow(2px 4px 6px black);
+  text-shadow: 0 0 black;
+}
+
+#services .card-description {
+  font-size: 1em;
+}
+
+#services .card .learn-more {
+  display: inline;
+  background: #ffffff;
+  color: purple;
+  transition: 0.5s;
+  padding: 0.8vw 1rem;
+  width: 10rem;
+  font-size: 1rem;
+}
+
+#services .card .learn-more:hover {
+  background: purple;
+  color: #ffffff;
+}
+
+#services .card:hover .card-info {
+  transform: translateY(0px);
+}
+
+#services .card:hover .card-img {
+  transform: translateX(400px);
+  transition-delay: 0s;
+}
+
+/* Sessão dos tipos de Serviços */
+#maintenance, #repairs, #recoverData {
+  margin: 6rem 0;
+}
+
+.title-field {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.title-field-background {
+  position: absolute;
+  left: 5%;
+  margin: 3rem 0;
+  right: 5%;
+  padding: 3rem;
+  background: #984d9894;
+  transition: 0.5s;
+  text-align: center;
+}
+
+.title-field.maintenance {
+  background: url("../../img/servicos/manutencao.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.title-field.repairs {
+  background: url("../../img/servicos/reparos.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.title-field.recoverData {
+  background: url("../../img/servicos/recuperarDados.jpeg") no-repeat center;
+  background-size: cover;
+}
+
+.field-area {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem 0 0 0;
+  margin-bottom: 5%;
+}
+
+.field {
+  width: 350px;
+  height: 360px;
+  /* margin: 1rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.field-icon {
+  width: 7rem;
+  height: 7rem;
+  border: 0.1rem solid purple;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.field-icon i {
+  font-size: 1.5rem;
+  color: purple;
+}
+
+.field-title {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.field-text {
+  font-size: 1rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.field-learn-more {
+  text-align: center;
+  text-decoration: none;
+  background: purple;
+  color: #ffffff;
+  transition: 0.5s;
+  padding: 0.8rem 1rem;
+  width: 10rem;
+  font-size: 1rem;
+}
+
+.field-learn-more:hover {
+  transform: scale(1.1, 1.1);
+}
+
+/* Sessão de Clientes */
+#clients {
+  background: #be95c3;
+  background: linear-gradient(to bottom, #efefef, #be95c3, #be95c3);
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#clients h1 {
+  font-weight: 900;
+  /*text-transform: uppercase;*/
+  padding: 2rem;
+  color: #747474;
+}
+
+#clients .testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+
+.front-rotating-card p {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  left: .8rem;
+  bottom: .8rem;
+  font-size: .8em;
+  padding: .8rem;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+}
+
+.front-rotating-card span {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.rotating-card .rotating-card-back h2 {
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+}
+
+.rotating-card .rotating-card-back p {
+  font-size: .9em;
+  font-weight: 500;
+  color: #fff;
+  padding: 0 1.5rem;
+}
+
+.rotating-card .rotating-card-back .bi {
+  transform: rotate(180deg);
+  font-size: 3rem;
+  color: white;
+}
+
+/* Sessão de Contato */
+#contact {
+  background: rgba(0, 0, 0, 0.2) url("../../img/fundo/fundo-home.jpg") no-repeat fixed center;
+  background-size: cover;
+  /* background-blend-mode: darken; */
+  display: flex;
+  justify-content: space-evenly;
+  height: 95vh;
+}
+
+.contact-container {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#contact h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  /*text-transform: uppercase;*/
+  color: white;
+  filter: drop-shadow(2px 4px 6px black);
+  margin: 2rem;
+  text-align: center;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #edd3ede3;
+  border-radius: 16px;
+  box-shadow: 0.1rem 0.5rem 5rem black;
+  margin: 5%;
+  height: 60vh;
+}
+
+.contact-info {
+  display: flex;
+  width: 20rem;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1rem;
+  height: 100%;
+}
+
+.contact-info div h3 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 0 0 1rem 0;
+}
+
+.contact-info div p {
+  font-size: 1em;
+}
+
+.social-network {
+  height: 4rem;
+  align-items: center;
+  display: flex;
+  gap: .5rem;
+}
+
+.social-network .bi {
+  font-size: 2em;
+}
+
+.social-network span {
+  width: 3rem;
+  text-align: center;
+}
+
+.social-network span :hover {
+  color: purple;
+  font-size: 2.5em;
+  transition: 0.5s;
+}
+
+.send-button input {
+  width: 100%;
+  margin-top: 1rem;
+  font-size: 1em;
+  /*text-transform: uppercase;*/
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  padding: 1rem;
+  color: white;
+  background: purple;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0.1rem 0.5rem 0.8rem black;
+}
+
+.send-button input:hover {
+  box-shadow: 0 0.1rem 0.1rem black;
+  transition: 0.5s;
+}
+
+#where-are-we {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  height: 95vh;
+}
+
+#where-are-we .location {
+  background: url("../../img/fundo/onde-estamos.png") no-repeat fixed 90% center;
+  background-size: cover;
+  height: 100%;
+  padding: 2rem;
+}
+
+#where-are-we .div-h2 {
+  background: #80008070 url("../../img/fundo/mapa-titulo.jpeg") no-repeat center;
+  background-size: cover;
+  background-blend-mode: darken;
+  height: 20%;
+}
+
+/* Sessão de Onde Estamos */
+#where-are-we h1 {
+  color: white;
+  margin: 4rem;
+}
+
+#where-are-we h2 {
+  margin: 1rem 2rem;
+  width: 50rem;
+  color: #747474;
+}
+
+#where-are-we h2 span {
+  font-weight: 800;
+  color: #d85d60;
+}
+
+.map {
+  margin: 2rem;
+  width: 40%;
+  height: 70%;
+  border-radius: 1rem;
+  box-shadow: 0.1rem 0.5rem 1rem black;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+/* Sessão de Login */
+#client-login {
+	background: #ffffff3b url("../../img/fundo/fundo-area-cliente.jpeg") no-repeat fixed;
+	background-size: cover;
+	height: 95vh;
+	padding: 4rem 0;
+	background-blend-mode: color-dodge;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.client-login-container {
+  padding: 4rem;
+  /*background-color: #00000060;*/
+  background-color: #7f5e9c75;
+  border-radius: 16px;
+  box-shadow: 2px 5px 5px black;">
+}
+
+#client-login h1 {
+	color: white;
+	/*text-transform: uppercase;*/
+	font-weight: 800;
+	filter: drop-shadow(1px 2px 4px black);
+}
+
+#client-login hr {
+	width: 7rem;
+	height: 1rem;
+	background: white;
+	border: none;
+	margin: 0;
+	filter: drop-shadow(2px 4px 6px black);
+}
+
+#client-login ul {
+	margin: 10%;
+}
+
+#client-login li {
+	list-style-type: square;
+	color: white;
+	filter: drop-shadow(2px 4px 6px black);
+	margin: 1rem;
+	font-size: 1.5em;
+	/*text-transform: uppercase;*/
+	font-weight: 700;
+}
+
+#client-login button {
+	background: white;
+	width: 25rem;
+	padding: 1rem;
+	filter: drop-shadow(1px 1px 4px black);
+	cursor: pointer;
+	/*text-transform: uppercase;*/
+	color: #984d98;
+	font-weight: 800;
+	font-size: 1.5rem;
+	text-shadow: 1px 1px 0 #9d9d9d;
+	border: 0.1rem solid white;
+  border-radius: 8px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+#client-login button:hover {
+	color: white;
+	transition: width 1s;
+}
+
+#client-login button::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -20px;
+	width: 0;
+	height: 150%;
+	background: #984d98;
+	transform: skewX(35deg);
+	z-index: -10;
+	transition: width 0.5s;
+}
+
+#client-login button:hover::before {
+	width: 120%;
+}
+
+#client-login .img-area-client {
+	width: 50%;
+	overflow: hidden;
+}
+
+#client-login .img-area-client img {
+	width: 100%;
+	filter: drop-shadow(2px 4px 6px black);
+}

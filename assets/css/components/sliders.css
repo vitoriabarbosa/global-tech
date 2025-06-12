@@ -1,0 +1,65 @@
+/* Slides para a sessão de 'Quem somos nós' */
+.content {
+  position: relative;
+  height: 95vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.content .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400%;
+  height: 100%;
+  float: left;
+  animation: anima 15s linear infinite;
+}
+
+.content .slider .slide {
+  position: relative;
+  width: 25%;
+  height: 100%;
+  float: left;
+}
+
+.content .slider .slide .caption {
+  position: absolute;
+  bottom: 0;
+  margin: 10% 5%;
+  padding: 3rem;
+  background: rgb(0, 0, 0, 0.6);
+  box-sizing: border-box;
+  transition: 0.8s;
+  color: white;
+}
+
+.content .slider .slide .caption h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.content .slider .slide .caption p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.content .slider .slide.slide1 {
+  background: url("../../img/slides/missao.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.content .slider .slide.slide2 {
+  background: url("../../img/slides/historia.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.content .slider .slide.slide3 {
+  background: url("../../img/slides/valores.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.content .slider .slide.slide4 {
+  background: url("../../img/slides/servicos.jpg") no-repeat center;
+  background-size: cover;
+}

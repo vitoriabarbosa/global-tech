@@ -1,0 +1,64 @@
+/* Formulário para contato */
+form {
+  height: 100%;
+  width: 25rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.label-float {
+  position: relative;
+  padding-top: 1rem;
+}
+
+.label-float input, .label-float textarea {
+  transition: all .3s ease-out;
+  border-radius: 0;
+  width: 100%;
+  padding: 0.5rem 0;
+  font-size: 1em;
+  margin-bottom: 2rem;
+  border: none;
+  border-bottom: 0.1rem solid black;
+  outline: none;
+  background: transparent;
+}
+
+.label-float input:focus, .label-float textarea:focus {
+  border-bottom: 0.1rem solid purple;
+}
+
+.label-float input::placeholder, .label-float textarea::placeholder {
+  color: transparent;
+}
+
+.label-float label {
+  pointer-events: none;
+  color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: .9em;
+  margin-top: 1.6rem;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label {
+  font-size: .9em;
+  margin-top: 0;
+  color: purple;
+  font-weight: bold;
+}
+
+.label-float textarea:focus + label,
+.label-float textarea:not(:placeholder-shown) + label {
+  font-size: .9em;
+  margin-top: 0;
+  color: purple;
+  font-weight: bold;
+}

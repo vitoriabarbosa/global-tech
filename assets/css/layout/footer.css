@@ -1,0 +1,103 @@
+footer {
+  background: black;
+  color: white;
+  padding: 2%;
+  font-size: .9em;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sitemap {
+	display: flex;
+	justify-content: space-around;
+	align-items: start;
+}
+
+.sitemap h4 {
+	font-size: 1.5rem;
+	margin: 1rem 0;
+	color: #984d98;
+}
+
+.sitemap p {
+  line-height: 1.5rem;
+}
+
+.sitemap li {
+  margin-bottom: 1rem;
+}
+
+.sitemap-about {
+	width: 20%;
+}
+
+.sitemap-service a:hover {
+	color: #e580e5;
+	text-decoration: underline;
+}
+
+.sitemap-contact .contact-footer {
+	display: flex;
+	align-items: center;
+  margin-bottom: 1rem;
+}
+
+.sitemap-contact .contact-footer .bi {
+	padding-right: .5rem;
+  color: #e580e5;
+}
+
+.footer-map {
+	width: 25%;
+	height: 15rem;
+}
+
+.footer-links {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer-menu {
+	display: flex;
+}
+
+.footer-menu a {
+	text-transform: uppercase;
+}
+
+.footer-menu a:hover {
+	color: #e580e5;
+	transition: 0.3s;
+}
+
+.pipe {
+	margin: 0.5rem;
+}
+
+hr {
+	width: 100%;
+	margin: 2rem 0;
+}
+
+.terms-of-use {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1rem;
+}
+
+.terms-of-use span {
+	margin-top: 1rem;
+}
+
+.terms-of-use a {
+	color: #984d98;
+}
+
+.terms-of-use a:hover {
+	text-decoration: underline;
+}
